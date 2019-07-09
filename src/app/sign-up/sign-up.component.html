@@ -1,0 +1,133 @@
+<div class="">
+<div class="container w3-padding-16">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-lg-6 col-md-6 w3-border bgOpacity">
+				<h1 class="w3-center"><b>SIGNUP</b></h1><br>
+				<!-- Nav pills -->
+				<ul class="nav nav-pills" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="pill" href="#restaurant">Restaurant</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="pill" href="#charity">Charity</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="pill" href="#deliveryboy">Delivery Boy</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="pill" href="#guest">Others</a>
+					</li>
+				</ul><hr>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+
+					<div id="restaurant" class="container tab-pane active"><br>
+						<form #restaurantForm="ngForm">
+							<label>Name</label>
+							<input ngModel type="text" name="name" class="form-control"><br>
+							<label>Email</label>
+							<input ngModel type="email" name="email" class="form-control"><br>
+							<label>Username</label>
+							<input ngModel type="text" name="username" class="form-control"><br>
+							<label>Password</label>
+							<input type="Password" name="" class="form-control"><br>
+							<label>Confirm Password</label>
+							<input ngModel type="Password" name="password" class="form-control"><br>
+							<label>Mobile</label>
+							<input ngModel type="number" name="mobile" class="form-control"><br>
+							<label>Address</label>
+							<input ngModel type="text" name="address" class="form-control"><br>
+							<label>Location</label>
+							<input ngModel type="text" name="location" class="form-control"><br>
+							<label>Certificate No</label>
+							<input ngModel type="number" name="certificateNo" class="form-control"><br>
+							<label>Upload Certificate</label>
+							<input ngModel type="file" name="certificateName" class="form-control"><br>
+							<div class="w3-container w3-center">
+							<button class="btn btn-dark w3-wide" (click)="saveRestaurant(restaurantForm.value)">SIGNUP</button>
+                            </div>
+						</form>
+					</div>
+
+
+					<div id="charity" class="container tab-pane fade"><br>
+						<form #charityForm="ngForm">
+							<label>Name</label>
+							<input ngModel type="text" name="name" class="form-control"><br>
+							<label>Email</label>
+							<input ngModel type="email" name="email" class="form-control"><br>
+							<label>Username</label>
+							<input ngModel type="text" name="username" class="form-control"><br>
+							<label>Password</label>
+							<input type="Password" name="" class="form-control"><br>
+							<label>Confirm Password</label>
+							<input ngModel type="Password" name="password" class="form-control"><br>
+							<label>Mobile</label>
+							<input ngModel type="number" name="mobile" class="form-control"><br>
+							<label>Address</label>
+							<input ngModel type="text" name="address" class="form-control"><br>
+							<label>Location</label>
+							<input ngModel type="text" name="location" class="form-control"><br>
+							<label>Food Requirement (no.of ppl)</label>
+							<input ngModel type="number" name="foodRequirement" class="form-control"><br>
+							<label>Certificate No</label>
+							<input ngModel type="number" name="certificateNo" class="form-control"><br>
+							<label>Upload Certificate</label>
+							<input ngModel type="file" name="certificateName" class="form-control"><br>
+							<button class="btn btn-dark w3-wide" (click)="saveCharity(charityForm.value)" routerLink="/postSignUp">SIGNUP</button>
+						</form><br><br>
+					</div>
+
+					<div id="deliveryboy" class="container tab-pane fade"><br>
+						<form #deliveryBoyForm="ngForm">
+							<label>Name</label>
+							<input ngModel type="text" name="name" class="form-control"><br>
+							<label>Email</label>
+							<input ngModel type="email" name="email" class="form-control"><br>
+							<label>Username</label>
+							<input ngModel type="text" name="username" class="form-control"><br>
+							<label>Password</label>
+							<input type="Password" name="" class="form-control"><br>
+							<label>Confirm Password</label>
+							<input ngModel type="Password" name="password" class="form-control"><br>
+							<label>Mobile</label>
+							<input ngModel type="number" name="mobile" class="form-control"><br>
+							<label>Address</label>
+							<input ngModel type="text" name="address" class="form-control"><br>
+							<label>License No</label>
+							<input ngModel type="text" name="licenseNo" class="form-control"><br>
+							<label>Upload License</label>
+							<input ngModel type="file" name="licenseName" class="form-control"><br>
+							<button class="btn btn-dark w3-wide" (click)="saveDeliveryBoy(deliveryBoyForm.value)" routerLink="/postSignUp">SIGNUP</button>
+						</form>
+					</div>
+
+					<div id="guest" class="container tab-pane fade"><br>
+						<form>
+							<label>Name</label>
+							<input type="text" name="" class="form-control"><br>
+							<label>Username</label>
+							<input type="text" name="" class="form-control"><br>
+							<label>Email</label>
+							<input type="email" name="" class="form-control"><br>
+							<label>Password</label>
+							<input type="Password" name="" class="form-control"><br>
+							<label>Confirm Password</label>
+							<input type="Password" name="" class="form-control"><br>
+							<label>Mobile</label>
+							<input type="number" name="" class="form-control"><br>
+							<label>License No</label>
+							<input type="number" name="" class="form-control"><br>
+							<label>Upload License</label>
+							<input type="file" name="" class="form-control"><br>
+							<button class="btn btn-dark w3-wide">SIGNUP</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
